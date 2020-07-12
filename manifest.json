@@ -1,0 +1,21 @@
+{
+    "name": "Rahadi Information",
+    "short_name": "Rahadi Info",
+    "description": "Rahadi Information",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00838f",
+    "theme_color": "#00838f",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+    ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00838f"/>
+  <meta charset="UTF-8"/>
+  <title>Rahadi Information</title>
+  <meta name="description" content="Rahadi Information"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav class="cyan darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Profile</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">&#9776;</a>
+
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul id="nav-mobile" class="sidenav"></ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+
+  
+  <!-- JUMBOTRON -->
+  <div class="card-panel cyan darken-3" id="jumbotron">
+    <div class="row">
+      <img src="assets/image-profile.png" alt="" class="circle responsive-img">
+    </div>
+    <div class="row" id="name">
+      <h4>Raden Rahadi Solehuddin</h4>
+    </div>
+    <div class="row" id="status">
+      <h5>Web Development Enthusiast</h5>
+    </div>
+  </div>
+  <!-- AKHIR JUMBUTRON -->
+
+  <div class="body-content container"></div>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
+
+<script>
+
+  // REGISTER SERVICE WORKER
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("/service-worker.js")
+        .then(function() {
+          console.log("Pendaftaran ServiceWorker berhasil");
+        })
+        .catch(function() {
+          console.log("Pendaftaran ServiceWorker gagal");
+        });
+    });
+  } else {
+    console.log("ServiceWorker belum didukung browser ini.");
+  }
+
+
+</script>

@@ -1,0 +1,124 @@
+#jumbotron{
+    height: 480px;
+    margin-top: 0px;
+}
+
+.responsive-img{
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.media-image{
+    width: 10px;
+    height: 10px;
+}
+
+#name{
+    color: white;
+    margin-left: 35%;
+}
+
+#status{
+    color: white;
+    margin-left: 37%;
+}
+
+blockquote{
+    border-left: 5px solid teal;
+    color: teal;
+}
+
+.twitter{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.social-media{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    
+}
+
+.btn-contact{
+    margin-left: 40px;
+    
+}
+
+
+@media only screen and (max-width: 326px){
+    .responsive-img{
+        margin-left: 10%;
+        margin-top: 30px;
+    }  
+    #name{
+        color: white;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #status{
+        color: white;
+        margin-left: 0%;
+        text-align: center;
+    }   
+}
+
+@media only screen and (min-width: 327px) and (max-width: 400px){
+    .responsive-img{
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    #name{
+        color: white;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #status{
+        color: white;
+        margin-left: 0%;
+        text-align: center;
+    }    
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 550px){
+    .responsive-img{
+        margin-left: 18%;
+        margin-top: 30px;
+    }
+    #name{
+        color: white;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #status{
+        color: white;
+        margin-left: 0%;
+        text-align: center;
+    }    
+
+}
+
+@media only screen and (min-width: 551px) and (max-width: 800px){
+    .responsive-img{
+        margin-left: 33%;
+        margin-top: 30px;
+    }
+    #name{
+        color: white;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #status{
+        color: white;
+        margin-left: 0%;
+        text-align: center;
+    }    
+
+}
